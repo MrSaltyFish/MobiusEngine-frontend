@@ -1,0 +1,30 @@
+@layer base {
+  /* Your base styles */
+}
+
+@layer components {
+  /* Your component classes */
+  .react-logo {
+    @apply motion-reduce:animate-none;
+  }
+}
+
+@layer utilities {
+  /* Your custom utilities */
+}
+
+/* Animation for React logo */
+@media (prefers-reduced-motion: no-preference) {
+  .react-logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
