@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage.tsx";
-import DevPage from "./pages/DevPage.tsx";
-import NotFoundPage from "./pages/NotFoundPage.tsx";
+import HomePage from "./pages/Home-page.tsx";
+import DevPage from "./pages/Dev-page.tsx";
+import NotFoundPage from "./pages/NotFound-page.tsx";
 import Header from "./components/shared/Header.tsx";
 import "./styles/globals.css";
 import "./styles/tailwind.css";
