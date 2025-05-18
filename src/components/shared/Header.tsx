@@ -5,9 +5,9 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-[#111111] shadow-md">
       {/* Mobile Header */}
-      <div className="md:hidden flex justify-between items-center p-4">
+      <div className="md:hidden flex justify-between items-center p-4 text-[#fefefe]">
         <div className="text-xl font-bold">Your Logo</div>
         <button
           onClick={() => setIsOpen(!isOpen)}

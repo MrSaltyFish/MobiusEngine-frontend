@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import NotFound from "./pages/NotFound";
-import Header from "./components/ui/Header";
+import HomePage from "./pages/HomePage";
+import DevPage from "./pages/DevPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import Header from "./components/shared/Header";
 import "./styles/globals.css";
 import "./styles/tailwind.css";
 
@@ -13,8 +14,9 @@ function App() {
 
         <Routes>
           {/* Main route for homepage */}
-          <Route path="/" element={<Homepage />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dev" element={<DevPage />} />
+          <Route path="*" element={<NotFoundPage />} />
 
           {/* You can add more routes later like: */}
           {/* <Route path="/about" element={<About />} /> */}
